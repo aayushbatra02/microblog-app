@@ -4,7 +4,7 @@
       @click="$emit('handleTagClick', tag)"
       v-for="(tag, id) in hashTags"
       :key="id"
-      class="border-b border-black leading-4 mb-4 cursor-pointer"
+      class="border-b border-black leading-4 mb-2 cursor-pointer"
     >
       #{{ tag }}
     </div>

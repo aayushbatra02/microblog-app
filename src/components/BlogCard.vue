@@ -9,7 +9,7 @@
       {{ blog.description }}
     </p>
     <div class="pb-4">
-      <div class="flex justify-center items-center my-4 gap-2">
+      <div class="flex justify-center items-center my-2 gap-2">
         <Icon
           @click="increaseLike(blog.id)"
           icon="mdi:heart"

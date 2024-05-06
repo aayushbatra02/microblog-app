@@ -16,8 +16,14 @@ export function useMicroblog() {
   const filterBlogs = (hashtagInput) => {
     if (hashtagInput !== "") {
       const updatedBlogs = blogsData.filter((blog) => {
-        const tagsArray = blog.tags.map((tag) => tag.toLowerCase());
-        return tagsArray.includes(hashtagInput.toLowerCase());
+        let isPresent = false;
+        for (let i = 0; i < blog.tags.length; i++) {
+          if (blog.tags[i].toLowerCase().startsWith(hashtagInput)) {
+            isPresent = true;
+            break;
+          }
+        }
+        return isPresent;
       });
       blogs.value = updatedBlogs;
     } else {
