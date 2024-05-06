@@ -1,15 +1,15 @@
 <template>
   <div class="p-4 w-[20rem] md:w-[43rem] lg:w-[70rem] m-auto">
-    <SearchHashtag
+    <search-hashtag
       @filterBlogs="filterBlogs"
       :clickedHashTag="clickedHashTag"
     />
     <div class="flex flex-wrap justify-right gap-4 mt-4">
-      <BlogCard
+      <blog-card
         :blog="blog"
         v-for="blog in blogs"
         :key="blog.id"
-        @handleHashtagClick="handleHashtagClick"
+        @handle-hashtag-click="handleHashtagClick"
       />
     </div>
   </div>
@@ -21,7 +21,7 @@ import SearchHashtag from "./components/SearchHashtag.vue";
 import { useMicroblog } from "./composables/use-microblog";
 
 const { blogs, filterBlogs, clickedHashTag, handleHashtagClick } =
-useMicroblog();
+  useMicroblog();
 </script>
 
 <style>

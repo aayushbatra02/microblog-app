@@ -17,10 +17,10 @@
         />
         {{ blog.likes }}
       </div>
-      <CardHashtags
+      <card-hashtags
         :hashTags="blog.tags"
-        @handleTagClick="handleTagClick"
-      ></CardHashtags>
+        @handle-tag-click="handleTagClick"
+      ></card-hashtags>
     </div>
   </div>
 </template>
