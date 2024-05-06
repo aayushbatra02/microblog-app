@@ -5,7 +5,7 @@
     "description": "I am learning Vue.js. The Composition API is great.",
     "likes": 14,
     "tags": [
-      "Vue",
+      "Coding",
       "JavaScript",
       "Composition API"
     ]
@@ -38,7 +38,7 @@
     "description": "Deep dive into Vue.js components. Learn how to create reusable, maintainable UI components with Vue.",
     "likes": 42,
     "tags": [
-      "Vue",
+      "Coding",
       "Frontend",
       "Components"
     ]
@@ -82,7 +82,7 @@
     "description": "Unlock the full potential of Vue.js with advanced techniques. Master Vue.js with insider tips and tricks.",
     "likes": 78,
     "tags": [
-      "Vue",
+      "Coding",
       "Frontend",
       "Advanced"
     ]

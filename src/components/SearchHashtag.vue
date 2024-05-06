@@ -3,7 +3,7 @@
     <label for="search">Search Hashtag: #</label>
     <input
       v-model.trim="hashtagInput"
-      class="px-2 pt-2 mx-2 border-b border-black w-[8rem] lg:w-[15rem]"
+      class="px-2 pt-1 mx-2 border-b border-black w-[8rem] lg:w-[15rem]"
       type="text"
     />
   </div>
