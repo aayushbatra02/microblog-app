@@ -18,7 +18,7 @@ export function useMicroblog() {
       const updatedBlogs = blogsData.filter((blog) => {
         let isPresent = false;
         for (let i = 0; i < blog.tags.length; i++) {
-          if (blog.tags[i].toLowerCase().startsWith(hashtagInput)) {
+          if (blog.tags[i].toLowerCase().startsWith(hashtagInput.toLowerCase())) {
             isPresent = true;
             break;
           }
