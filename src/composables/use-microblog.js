@@ -18,7 +18,9 @@ export function useMicroblog() {
       const updatedBlogs = blogsData.filter((blog) => {
         let isPresent = false;
         for (let i = 0; i < blog.tags.length; i++) {
-          if (blog.tags[i].toLowerCase().startsWith(hashtagInput.toLowerCase())) {
+          if (
+            blog.tags[i].toLowerCase().startsWith(hashtagInput.toLowerCase())
+          ) {
             isPresent = true;
             break;
           }
@@ -31,5 +33,17 @@ export function useMicroblog() {
     }
   };
 
-  return { blogs, increaseLike, filterBlogs };
+  const clickedHashTag = ref("");
+
+  const handleHashtagClick = (hashtag) => {
+    clickedHashTag.value = hashtag;
+  };
+
+  return {
+    blogs,
+    increaseLike,
+    filterBlogs,
+    clickedHashTag,
+    handleHashtagClick,
+  };
 }

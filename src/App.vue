@@ -16,18 +16,12 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import BlogCard from "./components/BlogCard.vue";
 import SearchHashtag from "./components/SearchHashtag.vue";
 import { useMicroblog } from "./composables/use-microblog";
 
-const { blogs, filterBlogs } = useMicroblog();
-const clickedHashTag = ref("");
-
-const handleHashtagClick = (hashtag) => {
-  clickedHashTag.value = hashtag;
-};
-
+const { blogs, filterBlogs, clickedHashTag, handleHashtagClick } =
+useMicroblog();
 </script>
 
 <style>
